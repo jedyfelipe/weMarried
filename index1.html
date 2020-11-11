@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title>homepage</title>
+	<meta charset="utf-8">
+	<!-- Responsivo -->
+	<meta name="viweport" content="width=device-width, initial-scale=1.0">
+	<!-- Folha de estilização -->
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<!-- JavaScript do contador regressivo -->
+	<script type="text/javascript" src="js.js"></script>
+	<!-- refresh usado para dev -->
+	<meta http-equiv="refresh" content="">
+</head>
+<body>
+	<header>
+	<nav class="links">
+		<a href="#inicio">Inicio</a>
+		<a href="#sobre">Sobre</a>
+		<a href="#confir">Confirmação</a>
+		<a href="#">Lista Casamento</a>
+		<a href="#local">Localização</a>
+		<a href="#noivos">Noivos</a>
+	</nav>
+	</header>
+
+	<section class="sections">
+		<section class="bloco" id="inicio">
+			<!-- Apresentação da pagina -->
+
+			<div class="glass">
+				<img src="imgs/ornamentos_branco.svg.png">
+				<h3 id="sm">Ariana Alves & Jediel Felipe</h3><br>
+				<p>&#10083;</p>
+				<h3 id="aj">Sara Alves & Marcus Ó</h3>
+				<img src="imgs/ornamentos_branco.svg.png">
+			</div>
+		</section>
+		<section class="bloco" id="sobre">
+			<!--Video de apresentação-->
+
+			<section class="video">
+				<h1>Sobre os noivos</h1>
+				<iframe src="https://www.youtube.com/embed/0HV9AaeAEjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				<!--Contador regressivo-->
+				<center>
+					<div class="countDown" id="dday"></div>
+				</center>
+	</section>
+		</section>
+		<section class="bloco" id="confir">
+			<!-- Campo de redirecionamento para formulário -->
+			<section>
+				<header>
+					<h1>Confirmação de presença</h1>	
+				</header>
+				<div class="divt">
+					<p> A sua confirmação é muito importante para que possamos organizar e melhorar a recepção para você, nosso convidado. <br> Será um dia muito especial.</p>	
+					<h4>Por favor, preencha o cadastro abaixo</h4>		 
+				</div>
+				<div class="divt-c">
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLScm3swEmqBoOoDKdkeKCGjypEc9HW5UZzctUDWN6Ty1eqZy_Q/viewform?usp=sf_link">Cadastro</a>
+				</div>
+			</section>
+		</section>
+		<section class="bloco" id="local">
+			<!--Google maps-->
+			<div class="maps">
+				<h1>Localização</h1>
+				<p>Estrada do Vergedo, 7343 - São Lourenço da Serra - SP</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.9436727033076!2d-46.97150968524495!3d-23.891615984519888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cfb777963ab4a7%3A0x897c4b2586e59553!2sRecanto%20Beija%20Flor!5e0!3m2!1spt-PT!2sbr!4v1603791868037!5m2!1spt-PT!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</section>
+		<section class="bloco" id="noivos">
+			<section class="gallery">
+				<header>
+					<h1>Noivos</h1>
+					<img src="imgs/ornamentos_branco.svg.png">
+				</header>
+				<ul>
+					<li><a href="#img1"><img src="imgs/img1.jpg" class="min"></a></li>
+					<li><a href="#img2"><img src="imgs/img2.jpg" class="min"></a></li>
+					<li><a href="#img3"><img src="imgs/img3.jpg" class="min"></a></li>
+					<li><a href="#img4"><img src="imgs/img4.jpg" class="min"></a></li>
+				</ul>
+				<ul>
+					<li><a href="#img1"><img src="imgs/img1.jpg" class="min"></a></li>
+					<li><a href="#img2"><img src="imgs/img2.jpg" class="min"></a></li>
+					<li><a href="#img3"><img src="imgs/img3.jpg" class="min"></a></li>
+					<li><a href="#img4"><img src="imgs/img4.jpg" class="min"></a></li>
+				</ul>
+				<div class="lbox" id="img1">
+					<div class="box_img">
+						<a href="#img4" class="btn" id="prev">&#171;</a>
+						<a href="#gallery" class="btn" id="close">X</a>
+						<img src="imgs/img1.jpg">
+						<a href="#img2" class="btn" id="next">&#187;</a>
+
+					</div>			
+				</div>
+				<div class="lbox" id="img2">
+					<div class="box_img">
+						<a href="#img1" class="btn" id="prev">&#171;</a>
+						<a href="#gallery" class="btn" id="close">X</a>
+						<img src="imgs/img2.jpg">
+						<a href="#img3" class="btn" id="next">&#187;</a>
+
+					</div>			
+				</div>
+				<div class="lbox" id="img3">
+					<div class="box_img">
+						<a href="#img2" class="btn" id="prev">&#171;</a>
+						<a href="#gallery" class="btn" id="close">X</a>
+						<img src="imgs/img3.jpg">
+						<a href="#img4" class="btn" id="next">&#187;</a>
+
+					</div>			
+				</div>
+				<div class="lbox" id="img4">
+					<div class="box_img">
+						<a href="#img3" class="btn" id="prev">&#171;</a>
+						<a href="#gallery" class="btn" id="close">X</a>
+						<img src="imgs/img4.jpg">
+						<a href="#img1" class="btn" id="next">&#187;</a>
+
+					</div>			
+				</div>
+		
+			</section>
+		</section>
+	</section>
+</body>
+</html>

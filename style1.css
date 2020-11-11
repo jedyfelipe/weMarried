@@ -1,0 +1,390 @@
+/* Configuração de todas as paginas */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* configuração e layout de todas as paginas */
+body {
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: backslide 20s ease-in-out infinite;
+
+}
+
+@keyframes backslide {
+	0%, 100% {
+		background-image: url(imgs/img4.jpg);
+	}
+	25% {
+		background-image: url(imgs/img13.jpg);
+	}
+	50% {
+		background-image: url(imgs/img22.jpg);
+	}
+	75% {
+		background-image: url(imgs/img23.jpg);
+	}
+}
+/* definindo o estilo da lista e posicionamento*/
+
+
+/* Estilo dos itens do menu (lista)*/
+
+
+/* efeito scroll */
+
+.bloco {
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+#inicio {
+	background: rgb(0, 0, 0, .5);
+}
+#sobre {
+	background-color: blue;
+	background-image: url(imgs/img32.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+}
+#confir {
+	background-color: grey;
+	background-image: url(imgs/img8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center;
+
+}
+#local {
+	background-image: url(imgs/img11.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+}
+#noivos {
+	background-color: black;
+}
+
+
+.sections {
+	transition: all ease-in-out .4s;
+	-moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+}
+
+.links {
+	width: 100%;
+	height: 5%;
+	position: fixed;
+	display: flex;
+	background-color: rgba(0,0,0,.1);
+	z-index: 1;
+}
+
+.links a {
+	padding: 10px 0;
+	flex-grow: 2;
+	cursor: pointer;
+	transition: all .4s;
+	text-align: center;
+	font-family: 'Arial'
+	font-size: 1.000em;
+	color: #CD5C5C;
+	text-decoration: none;
+	display: block;
+}
+
+
+
+.links a:hover {
+	background-color: rgba(255,255,255,.2);
+	color: white;
+
+}
+
+
+/* Titulo nome dos noivos*/
+
+.glass img {
+	width: 20%;
+	margin-left: 38.50%;
+	margin-top: 2%;
+}
+.glass h3, p {
+	position: relative;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+	height: 2%;
+	color: #fff;
+}
+
+.glass p {
+	font-size: 1.500em;
+	position: relative;
+	top: -1vh;
+	text-align: center;
+	width: 100%;
+	height: 2%;
+	color: #ff0000;
+}
+
+/* Section do video de apresentação8*/
+
+.video {
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+}
+
+.video h1 {
+	position: relative;
+	text-align: center;
+	color: black;
+	top: -2vh;
+	padding: 1.250rem;
+
+}
+
+.video iframe {
+	position: relative;
+	width: 50vw;
+	height: 50vh;
+	float: center;
+	transform: translate(50%, 10%);
+}
+
+/* Contador regressivo*/
+
+.countDown {
+	font-size: 1.850rem;
+	color: #000;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100vw;
+	height: 10vh;
+}
+
+/* bloco campo de redirecionamento para o formulário*/
+
+.divt {
+	background: rgb(0, 0, 0, .5);
+	width: 100vw;
+	height: 50vh;
+	border-bottom: 5vh solid;
+	border-top: 5vh solid;
+	transform: skewY(-4deg);
+
+
+} 
+#confir section header h1 {
+	
+	margin-top: -100px;
+	top: 0;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	height: 60px;
+
+}
+
+.divt p, h4  {
+	transform: skewY(4deg);
+	margin-top: 50px;
+	color: white;
+	text-align: center;
+	height: 100px;
+	padding: 20px -20px;
+	border-spacing: 25px;
+}
+
+
+.divt-c a {
+	text-decoration: none;
+	color: white;
+	border-radius: 3px;
+	font-family: 'Arial'
+	font-size: 20px;
+	width: 100%;
+	height: 550px;
+	border-style: solid;
+	border-color: #F08080;
+	position: relative;
+	left: 45%;
+	top: 50px;
+	padding: 10px 10px;
+	flex-grow: 1;
+	background-color: #DB7093;
+}
+
+.divt-c a:hover {
+	border-color: #D8BFD8;
+	background-color: #FFE4E1;
+	color: black;
+	transition: all 400ms;
+}
+
+
+/* maps */
+
+.maps {
+	align-items: center;
+	justify-content: center;
+	background: rgb(0, 0, 0, .5);
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.maps h1 {
+	margin-top: 30px;
+	padding: 20px;
+	text-align: center;
+	color: white;
+}
+
+.maps p {
+	color: white;
+}
+.maps iframe {
+	position: relative;
+	top: 10px;
+	width: 100vw;
+}
+
+
+/* light box gallery */
+
+
+.gallery {
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+}
+
+.gallery header, h1	  {
+	font-family: 'Arial';
+	text-align: center;
+	padding: 50px 50px 0px;
+	top: 80px;
+	color: white;
+}
+
+.gallery header img {
+	width: 200px;
+	padding-top: 30px;
+	padding-right: 30px;
+}
+
+.gallery ul {
+	width: 100vw;
+	list-style: none;
+	display: flex;
+	margin: 50px auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.lbox {
+
+	visibility: hidden;
+	opacity: 0;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+
+}
+
+.min {
+	width: 200px;
+	padding: 10px 10px;
+	margin-left: 20px;
+
+
+}
+
+.lbox:target {
+	opacity: 1;
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	top: 60px;
+	left: 0;
+	background: rgba(10,10,10,.7);
+	position: fixed;
+}
+
+.box_img {
+	width: 1000px;
+	top: 80px;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box_img img {
+	opacity: 0;
+	width: 100%;
+	height: 600px;
+}
+
+/* efeito de transação */
+
+.lbox:target ,.box_img img {
+	opacity: 1;
+	transition: opacity .4s linear;
+}
+
+.btn {
+	color: #fff;
+	font-family: 'Arial';
+	text-decoration: none;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+	text-align: center;
+
+}
+
+#prev{
+	left: 5%;
+	top:45%;
+}
+
+#next {
+	right: 5%;
+	top: 45%;
+}
+
+#close {
+	top: 0;
+	right: 2%;
+}
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+	.blocos {
+		width: 100vw;
+		height: 100vh;
+	}
+	iframe {
+		margin: 0 auto, 0 auto;
+	}
+}
+
