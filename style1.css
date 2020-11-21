@@ -114,6 +114,40 @@ body {
 
 }
 
+.expanse {
+	width: 100vw;
+	height: 5vh;
+	position: fixed;
+	display: inline-flex;
+	z-index: 1;
+	justify-content: center;
+	bottom: 0;
+}
+
+.expanse nav {
+	bottom: 0;
+}
+
+.expanse nav button {
+	background-color: rgba(255,255,255,.2);
+	width: 100vw;
+	border-style: none;
+}
+
+.expanse nav button:hover {
+	background-color: rgba(255,0,155,.2);
+	width: 100vw;
+	border-style: none;
+}
+
+.expanse nav button:active {
+	transform-style: ;
+}
+
+.expanse nav img {
+	width: 8vw;
+	height: 3vh;
+}
 
 /* Titulo nome dos noivos*/
 
@@ -155,6 +189,7 @@ body {
 	color: black;
 	top: -2vh;
 	padding: 1.250rem;
+	font-size: 1.25rem;
 
 }
 
@@ -190,6 +225,8 @@ body {
 
 
 } 
+
+
 #confir section header h1 {
 	
 	margin-top: -100px;
@@ -198,21 +235,23 @@ body {
 	color: white;
 	text-align: center;
 	height: 60px;
+	font-size: 1.25rem;
 
 }
 
-.divt p, h4  {
+.divt p {
 	transform: skewY(4deg);
-	margin-top: 50px;
+	margin-top: 0.5%;
 	color: white;
 	text-align: center;
-	height: 100px;
+	height: 10vh;
 	padding: 20px -20px;
-	border-spacing: 25px;
+	font-size: 1.125rem;
 }
 
 
 .divt-c a {
+	text-align: center;
 	text-decoration: none;
 	color: white;
 	border-radius: 3px;
@@ -223,7 +262,7 @@ body {
 	border-style: solid;
 	border-color: #F08080;
 	position: relative;
-	left: 45%;
+	left: 46%;
 	top: 50px;
 	padding: 10px 10px;
 	flex-grow: 1;
@@ -243,6 +282,7 @@ body {
 .maps {
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	background: rgb(0, 0, 0, .5);
 	width: 100vw;
 	height: 100vh;
@@ -250,25 +290,45 @@ body {
 }
 
 .maps h1 {
-	margin-top: 30px;
+	margin-top: 3%;
 	padding: 20px;
 	text-align: center;
 	color: white;
+	font-size: 1.25rem;
 }
 
 .maps p {
 	color: white;
+	font-size: 1.125rem;
+	float: center;
 }
 .maps iframe {
 	position: relative;
-	top: 10px;
 	width: 100vw;
+	height: 100vh;
+}
+
+.maps a {
+	text-decoration: none;
+	color: white;
+	border-radius: 3px;
+	font-family: 'Arial'
+	font-size: 20px;
+	width: 100%;
+	height: 550px;
+	border-style: solid;
+	border-color: #F08080;
+	position: relative;
+	top: 450px;
+	padding: 10px 10px;
+	flex-grow: 1;
+	background-color: #DB7093;
 }
 
 
 /* light box gallery */
 
-
+/*
 .gallery {
 	overflow: hidden;
 	width: 100vw;
@@ -280,7 +340,7 @@ body {
 	font-family: 'Arial';
 	text-align: center;
 	padding: 50px 50px 0px;
-	top: 80px;
+	top: 8%;
 	color: white;
 }
 
@@ -342,8 +402,10 @@ body {
 	height: 600px;
 }
 
-/* efeito de transação */
+*/
 
+/* efeito de transação */
+/*
 .lbox:target ,.box_img img {
 	opacity: 1;
 	transition: opacity .4s linear;
@@ -375,7 +437,7 @@ body {
 	top: 0;
 	right: 2%;
 }
-
+*/
 /* Responsividade */
 
 @media (max-width: 600px) {
@@ -383,8 +445,69 @@ body {
 		width: 100vw;
 		height: 100vh;
 	}
+	.
 	iframe {
 		margin: 0 auto, 0 auto;
 	}
+	.maps h1, p, a {
+		display: none;
+	}
 }
 
+@media (max-width: 425px) {
+	html {
+		font-size: 100%;
+	}
+	.glass p {
+		display: initial;
+		position: relative;
+		padding: 0 49% 0;
+	}
+
+	.links {
+		display: none;
+	}
+
+	.maps iframe {
+		display: none;
+	}
+	.maps h1 {
+		top: 5%;
+		display: initial;
+		position: relative;
+		text-align: center;
+		padding: 0 15% 0;
+	}
+	.maps p {
+		display: initial;
+		position: relative;
+		padding: 0 15% 0;	
+	}
+	.maps a {
+		display: initial;
+		position: relative;
+		margin: 0 25% 0;
+	}
+
+	.divt p {
+		display: initial;
+		padding: 1% 5% 0;
+		transform: skewY(4deg);
+
+	}
+
+	.divt-c a {
+		display: initial;
+		position: relative;
+		margin: 0 -6% 0; 
+	}
+}
+
+@media (max-width: 320px) {
+	.maps p {
+		padding: 0 10% 0;
+	}
+	.divt-c a {
+		margin: 0 -10% 0;
+	}
+}
