@@ -327,6 +327,11 @@ body {
 	html {
 		font-size: 100%;
 	}
+	.glass p {
+		display: initial;
+		position: relative;
+		padding: 0 49.5% 0;
+	}
 	.links {
 		display: none;
 	
@@ -338,18 +343,22 @@ body {
 	.video iframe {
 		margin: 0 auto, 0 auto;
 	}
-	.maps h1, p, a {
-		display: none;
+	.divt p {
+		display: initial;
+		padding: 0 10% 0;
+		transform: skewY(4deg);
 	}
-	.maps iframe {
+
+	.divt-c a {
+		display: initial;
+		position: relative; 
+	}
+	.maps h1, p, a {
 		display: none;
 	}
 }
 
 @media only screen and (max-device-width: 425px) {
-	html {
-		font-size: 100%;
-	}
 	.glass p {
 		display: initial;
 		position: relative;
