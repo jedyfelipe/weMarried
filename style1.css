@@ -305,7 +305,7 @@ body {
 	text-decoration: none;
 	color: white;
 	border-radius: 3px;
-	font-family: 'Arial'
+	font-family: 'Arial';
 	font-size: 20px;
 	width: 100%;
 	height: 550px;
@@ -325,33 +325,45 @@ body {
 
 @media only screen and (max-device-width: 786px) {
 	html {
-		font-size: 100%;
+		font-size: 1.25em;
+	}
+	.blocos {
+		width: 100vw;
+		height: 100vh;
+	}
+	.links {
+		display: none;
+	
+	}
+	.glass h3 {
+		font-size: 1.900rem;
 	}
 	.glass p {
 		display: initial;
 		position: relative;
 		padding: 0 49.5% 0;
 	}
-	.links {
-		display: none;
-	
-	}
-	.blocos {
-		width: 100vw;
-		height: 100vh;
+	.video h1 {
+		font-size: 2rem;
 	}
 	.video iframe {
 		margin: 0 auto, 0 auto;
 	}
+	#confir section header h1 {
+		font-size: 2rem;
+		margin-top: -10%;
+	}
 	.divt p {
 		display: initial;
 		padding: 0 10% 0;
-		transform: skewY(4deg);
+		transform: skewY(4deg);		
+		font-size: 1.8rem;
 	}
 
 	.divt-c a {
 		display: initial;
 		position: relative; 
+		font-size: 1.5rem;
 	}
 	.maps h1, p, a {
 		display: none;
@@ -359,56 +371,266 @@ body {
 }
 
 @media only screen and (max-device-width: 425px) {
+	html {
+		font-size: 1.25em;
+	}
+	.blocos {
+		width: 100vw;
+		height: 100vh;
+	}
+	.links {
+		display: none;
+	
+	}
+	.glass h3 {
+		font-size: 2.900rem;
+	}
 	.glass p {
+		font-size: 3rem;
 		display: initial;
 		position: relative;
 		padding: 0 49% 0;
 	}
-
-	.links {
-		display: none;
+	.video h1 {
+		font-size: 3rem;
+	}
+	.video iframe {
+		margin: 0 auto, 0 auto;
+		height: 600px;
+	}
+	.countDown {
+		margin-top: 20%;
+		font-size: 3rem;
+	}
+	#confir section header h1 {
+		font-size: 3rem;
+		margin-top: -10%;
+	}
+	.divt {
+		margin-top: 10%;
+	}
+	.divt p {
+		display: initial;
+		padding: 0 10% 0;
+		transform: skewY(4deg);		
+		font-size: 2rem;
 	}
 
+	.divt-c a {
+		display: initial;
+		position: relative; 
+		font-size: 2.5rem;
+		margin-left: -5%;
+	}
 	.maps iframe {
 		display: none;
 	}
 	.maps h1 {
-		top: 5%;
-		display: initial;
+		font-size: 2rem;
+		top: 10%;
+		display: flex;
 		position: relative;
 		text-align: center;
-		padding: 0 15% 0;
+		width: 20%;
+		left: 50%;
+		right: -50%;
+		transform: translate(-50%, -50%);
+	
 	}
 	.maps p {
-		display: initial;
+		font-size: 2.5rem;
+		display: flex;
 		position: relative;
-		padding: 0 15% 0;	
+		padding: 2rem;
+		text-align: center;
+		height: 5%;
+		width: 70%;
+		top: 40%;
+		left: 50%;
+		right: -50%;
+		transform: translate(-50%, -50%);	
 	}
 	.maps a {
-		display: initial;
-		position: relative;
-		margin: 0 25% 0;
+		font-size: 2rem;
+		width: 20%;
+		height: 2%;
+		display: flex;
+		margin: 0;
+		top: 50%;
+    	left: 50%;
+ 		margin-right: -50%;
+    	transform: translate(-50%, -50%)
+	
 	}
 
+}
+
+@media (max-device-width: 375px) {
+	html {
+		font-size: 1.25em;
+	}
+	.blocos {
+		width: 100vw;
+		height: 100vh;
+	}
+	.glass h3 {
+		font-size: 3rem;
+	}
+	.glass p {
+		font-size: 4rem;
+		display: initial;
+		position: relative;
+		padding: 0 49% 0;
+	}
+	.video h1 {
+		font-size: 3rem;
+	}
+	.video iframe {
+		margin: 0 auto, 0 auto;
+		height: 600px;
+	}
+	.countDown {
+		margin-top: 20%;
+		font-size: 3rem;
+	}
+	#confir section header h1 {
+		font-size: 3rem;
+		margin-top: -10%;
+	}
+	.divt {
+		margin-top: 10%;
+	}
 	.divt p {
 		display: initial;
-		padding: 1% 5% 0;
-		transform: skewY(4deg);
-
+		top: 30%;
+		padding: 0 5% 0;
+		transform: skewY(4deg);		
+		font-size: 3rem;
 	}
-
 	.divt-c a {
 		display: initial;
+		position: relative; 
+		font-size: 3.5rem;
+	}
+	.divt-c a {
+		margin: 0 -10% 0;
+	}
+	
+	.maps iframe {
+		display: none;
+	}
+	.maps h1 {
+		font-size: 2.5rem;
+		top: 10%;
+		display: flex;
 		position: relative;
-		margin: 0 -6% 0; 
+		text-align: center;
+		width: 20%;
+		left: 50%;
+		right: -50%;
+		transform: translate(-50%, -50%);
+	
+	}
+	.maps p {
+		font-size: 3rem;
+		display: flex;
+		position: relative;
+		padding: 2rem;
+		text-align: center;
+		height: 5%;
+		width: 70%;
+		top: 40%;
+		left: 50%;
+		right: -50%;
+		transform: translate(-50%, -50%);	
+	}
+	.maps a {
+		font-size: 2rem;
+		width: 20%;
+		height: 2%;
+		display: flex;
+		margin: 0;
+		top: 50%;
+    	left: 50%;
+ 		margin-right: -50%;
+    	transform: translate(-50%, -50%)
+	
 	}
 }
 
 @media (max-device-width: 320px) {
-	.maps p {
-		padding: 0 10% 0;
+	html {
+		font-size: 1.25em;
+	}
+	.blocos {
+		width: 100vw;
+		height: 100vh;
+	}
+	.links {
+		display: none;
+	
+	}
+	.glass h3 {
+		font-size: 4rem;
+	}
+	.glass p {
+		font-size: 5rem;
+		display: initial;
+		position: relative;
+		padding: 0 49% 0;
+	}
+	.video h1 {
+		font-size: 3rem;
+	}
+	.video iframe {
+		margin: 0 auto, 0 auto;
+		height: 600px;
+	}
+	.countDown {
+		margin-top: 20%;
+		font-size: 3rem;
 	}
 	.divt-c a {
 		margin: 0 -10% 0;
+	}
+	.maps iframe {
+		display: none;
+	}
+	.maps h1 {
+		font-size: 2.5rem;
+		top: 10%;
+		display: flex;
+		position: relative;
+		text-align: center;
+		width: 20%;
+		left: 50%;
+		right: -50%;
+		transform: translate(-50%, -50%);
+	
+	}
+	.maps p {
+		font-size: 3rem;
+		display: flex;
+		position: relative;
+		padding: 2rem;
+		text-align: center;
+		height: 5%;
+		width: 70%;
+		top: 40%;
+		left: 50%;
+		right: -50%;
+		transform: translate(-50%, -50%);	
+	}
+	.maps a {
+		font-size: 2rem;
+		width: 20%;
+		height: 2%;
+		display: flex;
+		margin: 0;
+		top: 50%;
+    	left: 50%;
+ 		margin-right: -50%;
+    	transform: translate(-50%, -50%)
+	
 	}
 }
