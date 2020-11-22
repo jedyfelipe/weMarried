@@ -72,16 +72,9 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-#noivos {
-	background-color: black;
-}
-
 
 .sections {
 	transition: all ease-in-out .4s;
-	-moz-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    -webkit-transition: all 0.4s ease-out;
 }
 
 .links {
@@ -326,135 +319,34 @@ body {
 }
 
 
-/* light box gallery */
 
-/*
-.gallery {
-	overflow: hidden;
-	width: 100vw;
-	height: 100vh;
-	align-items: center;
-}
-
-.gallery header, h1	  {
-	font-family: 'Arial';
-	text-align: center;
-	padding: 50px 50px 0px;
-	top: 8%;
-	color: white;
-}
-
-.gallery header img {
-	width: 200px;
-	padding-top: 30px;
-	padding-right: 30px;
-}
-
-.gallery ul {
-	width: 100vw;
-	list-style: none;
-	display: flex;
-	margin: 50px auto;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.lbox {
-
-	visibility: hidden;
-	opacity: 0;
-	width: 100vw;
-	height: 100vh;
-	align-items: center;
-
-}
-
-.min {
-	width: 200px;
-	padding: 10px 10px;
-	margin-left: 20px;
-
-
-}
-
-.lbox:target {
-	opacity: 1;
-	visibility: visible;
-	width: 100%;
-	height: 100%;
-	top: 60px;
-	left: 0;
-	background: rgba(10,10,10,.7);
-	position: fixed;
-}
-
-.box_img {
-	width: 1000px;
-	top: 80px;
-	margin: auto;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.box_img img {
-	opacity: 0;
-	width: 100%;
-	height: 600px;
-}
-
-*/
-
-/* efeito de transação */
-/*
-.lbox:target ,.box_img img {
-	opacity: 1;
-	transition: opacity .4s linear;
-}
-
-.btn {
-	color: #fff;
-	font-family: 'Arial';
-	text-decoration: none;
-	position: absolute;
-	width: 50px;
-	height: 50px;
-	font-size: 40px;
-	text-align: center;
-
-}
-
-#prev{
-	left: 5%;
-	top:45%;
-}
-
-#next {
-	right: 5%;
-	top: 45%;
-}
-
-#close {
-	top: 0;
-	right: 2%;
-}
-*/
 /* Responsividade */
 
-@media (max-width: 600px) {
+
+@media only  and (max-width: 786px) {
+	html {
+		font-size: 100%;
+	}
+	.links {
+		display: none;
+	
+	}
 	.blocos {
 		width: 100vw;
 		height: 100vh;
 	}
-	.
-	iframe {
+	.video iframe {
 		margin: 0 auto, 0 auto;
 	}
 	.maps h1, p, a {
 		display: none;
 	}
+	.maps iframe {
+		display: none;
+	}
 }
 
-@media (max-width: 425px) {
+/*@media only screen and (max-width: 425px) {
 	html {
 		font-size: 100%;
 	}
@@ -510,4 +402,4 @@ body {
 	.divt-c a {
 		margin: 0 -10% 0;
 	}
-}
+}*/
