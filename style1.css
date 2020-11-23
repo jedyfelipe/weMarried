@@ -49,7 +49,6 @@ body {
 	background: rgb(0, 0, 0, .5);
 }
 #sobre {
-	background-color: blue;
 	background-image: url(imgs/img32.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -57,7 +56,6 @@ body {
 	align-items: center;
 }
 #confir {
-	background-color: grey;
 	background-image: url(imgs/img8.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -298,7 +296,7 @@ body {
 .maps iframe {
 	position: relative;
 	width: 100vw;
-	height: 100vh;
+	height: 70vh;
 }
 
 .maps a {
@@ -365,6 +363,9 @@ body {
 		position: relative; 
 		font-size: 1.5rem;
 	}
+	.maps iframe {
+		height: 100vh;
+	}
 	.maps h1, p, a {
 		display: none;
 	}
@@ -402,6 +403,14 @@ body {
 		margin-top: 20%;
 		font-size: 3rem;
 	}
+
+	#confir {
+	background-image: url(imgs/img8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	align-items: center;
+	}
 	#confir section header h1 {
 		font-size: 3rem;
 		margin-top: -10%;
@@ -421,6 +430,13 @@ body {
 		position: relative; 
 		font-size: 2.5rem;
 		margin-left: -5%;
+	}
+	#local {
+	background-image: url(imgs/img11_500.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
 	}
 	.maps iframe {
 		display: none;
@@ -493,6 +509,13 @@ body {
 		margin-top: 20%;
 		font-size: 3rem;
 	}
+	#confir {
+	background-image: url(imgs/img8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	align-items: center;
+	}
 	#confir section header h1 {
 		font-size: 3rem;
 		margin-top: -10%;
@@ -515,7 +538,13 @@ body {
 	.divt-c a {
 		margin: 0 -10% 0;
 	}
-	
+	#local {
+	background-image: url(imgs/img11_500.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+	}
 	.maps iframe {
 		display: none;
 	}
@@ -590,8 +619,22 @@ body {
 		margin-top: 20%;
 		font-size: 3rem;
 	}
+	#confir {
+	background-image: url(imgs/img8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	align-items: center;
+	}
 	.divt-c a {
 		margin: 0 -10% 0;
+	}
+	#local {
+	background-image: url(imgs/img11_500.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
 	}
 	.maps iframe {
 		display: none;
