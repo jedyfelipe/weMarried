@@ -73,6 +73,7 @@ body {
 
 .sections {
 	transition: all ease-in-out .4s;
+	overflow-x: hidden;
 }
 
 .links {
